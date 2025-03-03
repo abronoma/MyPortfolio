@@ -1,0 +1,360 @@
+.fixed-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: auto;
+  width: 20%; /* Added explicit width */
+  background-color: #fff; /* Added background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  z-index: 100; /* Ensure sidebar stays above other content */
+}
+
+.main-content {
+  margin-left: 20%;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.portfolio-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: #333; /* Added consistent text color */
+}
+
+.section-subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600; /* Added font weight for better hierarchy */
+}
+
+.section-description {
+  max-width: 400px;
+  margin-bottom: 20px;
+  color: #666;
+  line-height: 1.6; /* Improved readability */
+}
+
+.view-all-btn {
+  display: inline-block;
+  background-color: #ffde59;
+  color: #333; /* Changed to dark text for better contrast */
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px; /* Added rounded corners */
+  transition: background-color 0.3s, transform 0.2s; /* Added smooth transition */
+}
+
+.view-all-btn:hover {
+  background-color: #ffd326; /* Darker shade on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Carousel Styles */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px; /* Added margin */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 33.333%;
+  padding: 0 15px; /* Increased padding between items */
+  box-sizing: border-box;
+}
+
+.carousel-item-inner {
+  background-color: #f7f7f7;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 8px; /* Increased border radius */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  transition: transform 0.3s; /* Added hover effect */
+  overflow: hidden; /* Prevent image overflow */
+}
+
+.carousel-item-inner:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.nostalgia,
+.workoholic,
+.zookeeper {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; /* Added position for overlay */
+}
+
+/* Added image overlay effect */
+.nostalgia::after,
+.workoholic::after,
+.zookeeper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Subtle overlay */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nostalgia:hover::after,
+.workoholic:hover::after,
+.zookeeper:hover::after {
+  opacity: 1;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px; /* Increased spacing */
+  font-size: 16px; /* Increased font size */
+  padding: 0 5px; /* Added padding */
+}
+
+.item-title {
+  color: #333;
+  font-weight: 600; /* Made title bolder */
+}
+
+.item-type {
+  color: #666;
+  font-style: italic; /* Added style distinction */
+}
+
+/* Carousel Navigation */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px; /* Increased spacing */
+}
+
+.dot {
+  width: 12px; /* Increased size */
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 6px; /* Increased spacing */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.dot:hover {
+  transform: scale(1.2); /* Added hover effect */
+}
+
+.dot.active {
+  background-color: #6c442f;
+  transform: scale(1.2); /* Make active dot larger */
+}
+
+/* Footer styles */
+.footer-contact {
+  background-color: #f4ebec;
+  padding: 60px 20px; /* Increased padding */
+  text-align: center;
+}
+
+.container {
+  width: 80%; /* Increased width for smaller screens */
+  max-width: 800px; /* Added max width */
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px; /* Increased spacing */
+  letter-spacing: 1px;
+}
+
+.highlight {
+  color: #6c442f;
+}
+
+.section-description {
+  font-size: 16px; /* Increased font size */
+  line-height: 1.6; /* Improved readability */
+  margin-bottom: 40px; /* Increased spacing */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px; /* Limited width for readability */
+  color: #666; /* Fixed inconsistent text color */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px; /* Increased spacing */
+}
+
+.form-group {
+  flex: 1;
+  position: relative;
+}
+
+.form-control {
+  width: 100%;
+  padding: 14px 15px; /* Increased padding */
+  border: 1px solid #6c442f;
+  background-color: #fff; /* Fixed background color */
+  border-radius: 6px; /* Increased border radius */
+  color: #333; /* Fixed text color */
+  font-size: 15px; /* Increased font size */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Added transition */
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #6c442f;
+  box-shadow: 0 0 0 3px rgba(108, 68, 47, 0.2); /* Added focus indicator */
+}
+
+textarea.form-control {
+  min-height: 150px; /* Increased height */
+  resize: vertical;
+}
+
+.error-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff4c4c; /* Changed color for better visibility */
+  font-weight: bold;
+  display: none;
+}
+
+.textarea-group .error-icon {
+  top: 15px;
+  transform: none;
+}
+
+.form-control.error {
+  border-color: #ff4c4c;
+  background-color: rgba(255, 76, 76, 0.05); /* Added subtle background */
+}
+
+.form-control.error + .error-icon {
+  display: block;
+}
+
+/* Button styles */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Center content */
+  background-color: #ffde59;
+  color: #333; /* Changed to dark text for better contrast */
+  padding: 14px 28px; /* Increased padding */
+  border: none;
+  border-radius: 6px; /* Increased border radius */
+  font-size: 15px; /* Increased font size */
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  min-width: 180px; /* Added min width */
+}
+
+.cta-button:hover {
+  background-color: #ffd326; /* Changed to a matching yellow shade */
+  transform: translateY(-3px); /* Increased hover effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Added shadow on hover */
+}
+
+.cta-button:active {
+  transform: translateY(-1px); /* Added press effect */
+}
+
+.cta-button svg {
+  margin-left: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .carousel-item {
+    flex: 0 0 50%;
+  }
+  .section-header {
+    flex-direction: column;
+  }
+  .section-right {
+    margin-top: 20px;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .fixed-sidebar {
+    position: static; /* Make sidebar non-fixed on mobile */
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .main-content {
+    margin-left: 0; /* Remove margin */
+    padding: 15px;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+    padding: 0 10px; /* Reduced padding */
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 20px; /* Increased gap for mobile */
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .footer-contact {
+    padding: 40px 15px; /* Reduced padding */
+  }
+
+  .container {
+    width: 100%;
+  }
+}

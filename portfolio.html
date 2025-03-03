@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gertrude Ans - Portfolio</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white font-sans">
+    <!-- Fixed Sidebar -->
+    <aside
+      class="fixed-sidebar bg-[#6C442F] text-white p-6 flex flex-col justify-between"
+    >
+      <div>
+        <h1 class="text-3xl font-bold mb-10">Gertrude.</h1>
+        <nav class="mt-5">
+          <ul class="space-y-6">
+            <li>
+              <a
+                href="#about"
+                data-section="about"
+                class="hover:text-[#FFDE59] transition-colors"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#experience"
+                data-section="experience"
+                class="hover:text-[#FFDE59] transition-colors"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a
+                href="#works"
+                data-section="works"
+                class="hover:text-[#FFDE59] transition-colors"
+                >Works</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                data-section="contact"
+                class="hover:text-[#FFDE59] transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Footer inside Sidebar -->
+      <footer>
+        <p class="text-sm mb-4">contact@yoursite.com</p>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-[#FFDE59] transition-colors"
+            ><i data-lucide="github" class="w-5 h-5"></i
+          ></a>
+          <a href="#" class="hover:text-[#FFDE59] transition-colors"
+            ><i data-lucide="linkedin" class="w-5 h-5"></i
+          ></a>
+          <a href="#" class="hover:text-[#FFDE59] transition-colors"
+            ><i data-lucide="mail" class="w-5 h-5"></i
+          ></a>
+        </div>
+      </footer>
+    </aside>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="md:hidden fixed top-5 right-5 z-50">
+      <button id="mobile-menu-toggle">
+        <i data-lucide="menu" class="w-8 h-8 text-[#6C442F]"></i>
+      </button>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="fixed top-5 right-20 z-50">
+      <button id="theme-toggle">
+        <i
+          data-lucide="moon"
+          id="theme-icon"
+          class="w-7 h-7 text-[#6C442F]"
+        ></i>
+      </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="main-content min-h-screen flex items-center py-20"
+    >
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0 relative">
+            <div
+              class="absolute top-0 left-0 w-64 h-64 bg-[#FFDE59] rounded-[30%] -z-10 transform -translate-x-8 -translate-y-8"
+            ></div>
+            <img
+              src="./images/heroimg.jpg"
+              alt="Gertrude Ans"
+              class="w-64 h-auto object-cover rounded-xl z-10 relative shadow-lg"
+            />
+          </div>
+          <div class="md:w-1/2 text-center md:text-left md:pl-10">
+            <p class="text-lg font-light tracking-widest mb-3 text-gray-600">
+              WEB DEVELOPER
+            </p>
+            <h2 class="text-5xl md:text-6xl font-bold text-[#6C442F] mb-6">
+              Gertrude Ans.
+            </h2>
+            <p class="text-gray-600 mb-8 max-w-md">
+              Passionate web developer creating elegant, responsive, and
+              user-friendly digital experiences.
+            </p>
+            <a
+              href="#contact"
+              class="bg-[#FFDE59] hover:bg-[#6C442F] text-white py-3 px-8 rounded-md transition-colors font-medium"
+              >Let's Talk</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="main-content py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-[#6C442F] mb-16 text-center">
+          About Me
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <!-- Education Section -->
+          <div>
+            <h3 class="text-2xl font-bold text-[#6C442F] mb-8">Education</h3>
+
+            <div class="mb-8 border-l-4 border-[#FFDE59] pl-6">
+              <p class="text-gray-500 mb-1">Feb 2025 - May 2025</p>
+              <h4 class="text-xl font-bold mb-1">Backend Development</h4>
+              <p class="text-gray-700">Mest Africa</p>
+            </div>
+
+            <div class="mb-8 border-l-4 border-[#FFDE59] pl-6">
+              <p class="text-gray-500 mb-1">July 2023 - June 2024</p>
+              <h4 class="text-xl font-bold mb-1">Full Stack Web Development</h4>
+              <p class="text-gray-700">Developers In Vogue</p>
+            </div>
+
+            <div class="mb-8 border-l-4 border-[#FFDE59] pl-6">
+              <p class="text-gray-500 mb-1">Sep 2017 - Sep 2021</p>
+              <h4 class="text-xl font-bold mb-1">Bsc. Admin (Accounting)</h4>
+              <p class="text-gray-700">Central University</p>
+            </div>
+
+            <div class="mb-8 border-l-4 border-[#FFDE59] pl-6">
+              <p class="text-gray-500 mb-1">Dec 2015 - June 2017</p>
+              <h4 class="text-xl font-bold mb-1">Database Technology</h4>
+              <p class="text-gray-700">IPMC</p>
+            </div>
+          </div>
+
+          <!-- Experience Section -->
+          <div>
+            <h3 class="text-2xl font-bold text-[#6C442F] mb-8">Experiences</h3>
+
+            <div class="mb-8 border-l-4 border-[#FFDE59] pl-6">
+              <p class="text-gray-500 mb-1">Jun 2024 - Aug 2024</p>
+              <h4 class="text-xl font-bold mb-1">Backend Developer (Intern)</h4>
+              <p class="text-gray-700">Hurisoft, Inc. Accra</p>
+            </div>
+
+            <div class="mb-8 border-l-4 border-[#FFDE59] pl-6">
+              <p class="text-gray-500 mb-1">Oct 2021 - Aug 2022</p>
+              <h4 class="text-xl font-bold mb-1">Call Taker</h4>
+              <p class="text-gray-700">National Signal Bureau, Accra</p>
+            </div>
+
+            <div class="mb-8 border-l-4 border-[#FFDE59] pl-6">
+              <p class="text-gray-500 mb-1">Mar 2019 - Jun 2019</p>
+              <h4 class="text-xl font-bold mb-1">Reception Assistant</h4>
+              <p class="text-gray-700">
+                Central University, Miotso, Prampram, Ghana
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="main-content py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-[#6C442F] mb-16 text-center">
+          Experience
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <!-- Professional Experience Column -->
+          <div>
+            <h3 class="text-2xl font-bold text-[#6C442F] mb-8">
+              Professional Experience
+            </h3>
+
+            <!-- Experience Item 1 -->
+            <div class="mb-12 border-l-4 border-[#6C442F] pl-6">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="text-xl font-semibold">
+                  Backend Web Developer || Product Owner
+                </h4>
+                <span
+                  class="text-sm bg-[#FFDE59] text-[#6C442F] px-3 py-1 rounded-full font-medium"
+                  >07/23 - 06/24</span
+                >
+              </div>
+              <p class="text-gray-700 mb-3">Hurisoft Inc.</p>
+              <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li>
+                  Developed and maintained automated scripts for deploying
+                  applications to cloud-based environments using TypeScript and
+                  Firebase
+                </li>
+                <li>
+                  Collaborated with frontend developers to ensure a seamless
+                  integration of UI components with the backend infrastructure
+                </li>
+                <li>
+                  Created RESTful web services using Firebase and Node.js for
+                  various web applications
+                </li>
+              </ul>
+            </div>
+
+            <!-- Experience Item 2 -->
+            <div class="mb-12 border-l-4 border-[#6C442F] pl-6">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="text-xl font-semibold">Frontend Developer</h4>
+                <span
+                  class="text-sm bg-[#FFDE59] text-[#6C442F] px-3 py-1 rounded-full font-medium"
+                  >2020-2023</span
+                >
+              </div>
+              <p class="text-gray-700 mb-3">
+                Developers In Vogue (Team Project)
+              </p>
+              <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li>
+                  Developed and maintained client websites using HTML, CSS, and
+                  JavaScript
+                </li>
+                <li>Collaborated with Backend to implement UI</li>
+                <li>
+                  Created reusable component libraries to improve development
+                  efficiency
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Skills Column -->
+          <div>
+            <h3 class="text-2xl font-bold text-[#6C442F] mb-8">
+              Skills & Expertise
+            </h3>
+
+            <!-- Skill bars -->
+            <div class="space-y-8">
+              <!-- Skill 1 -->
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">HTML/CSS</span>
+                  <span class="text-[#6C442F] font-medium">95%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-[#FFDE59] h-2 rounded-full"
+                    style="width: 95%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Skill 2 -->
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">JavaScript</span>
+                  <span class="text-[#6C442F] font-medium">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-[#FFDE59] h-2 rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Skill 3 -->
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">TypeScript</span>
+                  <span class="text-[#6C442F] font-medium">85%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-[#FFDE59] h-2 rounded-full"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Skill 4 -->
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">Tailwind CSS</span>
+                  <span class="text-[#6C442F] font-medium">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-[#FFDE59] h-2 rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Skill 5 -->
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">Node.js</span>
+                  <span class="text-[#6C442F] font-medium">75%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    class="bg-[#FFDE59] h-2 rounded-full"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Skills -->
+            <div class="mt-12">
+              <h4 class="text-xl font-semibold mb-4">Additional Skills</h4>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="bg-white px-4 py-2 rounded-full text-[#6C442F] border border-[#6C442F] hover:bg-[#6C442F] hover:text-white transition-colors"
+                  >Git & Github</span
+                >
+                <span
+                  class="bg-white px-4 py-2 rounded-full text-[#6C442F] border border-[#6C442F] hover:bg-[#6C442F] hover:text-white transition-colors"
+                  >Figma</span
+                >
+                <span
+                  class="bg-white px-4 py-2 rounded-full text-[#6C442F] border border-[#6C442F] hover:bg-[#6C442F] hover:text-white transition-colors"
+                  >MongoDB</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="works" class="main-content py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center mb-16"
+        >
+          <div>
+            <p class="text-sm uppercase tracking-widest text-gray-500 mb-2">
+              SOME OF MY RECENT
+            </p>
+            <h2 class="text-4xl font-bold text-[#6C442F]">Projects</h2>
+          </div>
+          <div class="mt-6 md:mt-0">
+            <p class="text-gray-600 mb-4">Browse my latest work</p>
+            <a
+              href="#"
+              class="text-[#6C442F] font-medium border-b-2 border-[#FFDE59] pb-1 hover:text-[#FFDE59] transition-colors"
+              >View All Projects</a
+            >
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md transition-all hover:shadow-xl transform hover:-translate-y-2"
+          >
+            <div class="h-56 bg-gray-200 relative overflow-hidden">
+              <div
+                class="absolute inset-0 bg-[#6C442F] opacity-30 hover:opacity-0 transition-opacity"
+              ></div>
+              <img
+                src="./images/project1.jpg"
+                alt="Medtrack Project"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h4 class="font-bold text-xl mb-2 text-[#6C442F]">
+                Medtrack Project
+              </h4>
+              <p class="text-gray-600 mb-4">
+                A full-featured online pharmacy inventory management system.
+              </p>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="bg-gray-100 px-3 py-1 text-xs rounded-full text-[#6C442F]"
+                  >React</span
+                >
+                <span
+                  class="bg-gray-100 px-3 py-1 text-xs rounded-full text-[#6C442F]"
+                  >Node.js</span
+                >
+                <span
+                  class="bg-gray-100 px-3 py-1 text-xs rounded-full text-[#6C442F]"
+                  >MongoDB</span
+                >
+              </div>
+              <a
+                href="#"
+                class="inline-block mt-4 text-[#6C442F] hover:text-[#FFDE59] transition-colors"
+                >View Project →</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md transition-all hover:shadow-xl transform hover:-translate-y-2"
+          >
+            <div class="h-56 bg-gray-200 relative overflow-hidden">
+              <div
+                class="absolute inset-0 bg-[#6C442F] opacity-30 hover:opacity-0 transition-opacity"
+              ></div>
+              <img
+                src="./images/project2.jpg"
+                alt="Problems Log UI"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h4 class="font-bold text-xl mb-2 text-[#6C442F]">
+                Problems-Log-UI
+              </h4>
+              <p class="text-gray-600 mb-4">
+                A responsive UI for people to log their problems anonymously to
+                receive assistance.
+              </p>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="bg-gray-100 px-3 py-1 text-xs rounded-full text-[#6C442F]"
+                  >HTML</span
+                >
+                <span
+                  class="bg-gray-100 px-3 py-1 text-xs rounded-full text-[#6C442F]"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="bg-gray-100 px-3 py-1 text-xs rounded-full text-[#6C442F]"
+                  >JavaScript</span
+                >
+              </div>
+              <a
+                href="#"
+                class="inline-block mt-4 text-[#6C442F] hover:text-[#FFDE59] transition-colors"
+                >View Project →</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md transition-all hover:shadow-xl transform hover:-translate-y-2"
+          >
+            <div class="h-56 bg-gray-200 relative overflow-hidden">
+              <div
+                class="absolute inset-0 bg-[#6C442F] opacity-30 hover:opacity-0 transition-opacity"
+              ></div>
+              <img
+                src="./images/project3.jpg"
+                alt="Crypthority"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h4 class="font-bold text-xl mb-2 text-[#6C442F]">Crypthority</h4>
+              <p class="text-gray-600 mb-4">
+                A learning Management System on cryptocurrency with intuitive
+                user interface.
+              </p>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="bg-gray-100 px-3 py-1 text-xs rounded-full text-[#6C442F]"
+                  >Firebase</span
+                >
+                <span
+                  class="bg-gray-100 px-3 py-1 text-xs rounded-full text-[#6C442F]"
+                  >TypeScript</span
+                >
+              </div>
+              <a
+                href="#"
+                class="inline-block mt-4 text-[#6C442F] hover:text-[#FFDE59] transition-colors"
+                >View Project →</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Projects Section -->
+        <div class="mt-20">
+          <h3 class="text-2xl font-bold text-[#6C442F] mb-8 text-center">
+            Other Projects
+          </h3>
+
+          <div class="carousel-container">
+            <div class="carousel" id="portfolio-carousel">
+              <div class="carousel-item">
+                <div class="carousel-item-inner nostalgia relative group">
+                  <div
+                    class="absolute inset-0 bg-[#6C442F] opacity-50 group-hover:opacity-70 transition-opacity"
+                  ></div>
+                  <div class="relative z-10 text-white text-center p-6">
+                    <h3 class="text-xl font-bold mb-2">Restaurant Website</h3>
+                    <p class="mb-4">
+                      A modern website for a high-end restaurant
+                    </p>
+                    <div class="flex justify-center gap-2">
+                      <span class="bg-white/20 px-2 py-1 text-xs rounded"
+                        >HTML</span
+                      >
+                      <span class="bg-white/20 px-2 py-1 text-xs rounded"
+                        >CSS</span
+                      >
+                      <span class="bg-white/20 px-2 py-1 text-xs rounded"
+                        >JS</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="carousel-item-inner workoholic relative group">
+                  <div
+                    class="absolute inset-0 bg-[#6C442F] opacity-50 group-hover:opacity-70 transition-opacity"
+                  ></div>
+                  <div class="relative z-10 text-white text-center p-6">
+                    <h3 class="text-xl font-bold mb-2">Painting Website</h3>
+                    <p class="mb-4">Art gallery and e-commerce platform</p>
+                    <div class="flex justify-center gap-2">
+                      <span class="bg-white/20 px-2 py-1 text-xs rounded"
+                        >HTML</span
+                      >
+                      <span class="bg-white/20 px-2 py-1 text-xs rounded"
+                        >CSS</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="carousel-item-inner zookeeper relative group">
+                  <div
+                    class="absolute inset-0 bg-[#6C442F] opacity-50 group-hover:opacity-70 transition-opacity"
+                  ></div>
+                  <div class="relative z-10 text-white text-center p-6">
+                    <h3 class="text-xl font-bold mb-2">To-Do Application</h3>
+                    <p class="mb-4">Task management with clean interface</p>
+                    <div class="flex justify-center gap-2">
+                      <span class="bg-white/20 px-2 py-1 text-xs rounded"
+                        >HTML</span
+                      >
+                      <span class="bg-white/20 px-2 py-1 text-xs rounded"
+                        >Tailwind</span
+                      >
+                      <span class="bg-white/20 px-2 py-1 text-xs rounded"
+                        >JS</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="carousel-item-inner bg-[#e8fcef] relative group">
+                  <div
+                    class="absolute inset-0 bg-[#6C442F] opacity-50 group-hover:opacity-70 transition-opacity"
+                  ></div>
+                  <div class="relative z-10 text-white text-center p-6">
+                    <h3 class="text-xl font-bold mb-2">Admin Dashboard</h3>
+                    <p class="mb-4">Static admin panel with clean UI</p>
+                    <div class="flex justify-center gap-2">
+                      <span class="bg-white/20 px-2 py-1 text-xs rounded"
+                        >HTML</span
+                      >
+                      <span class="bg-white/20 px-2 py-1 text-xs rounded"
+                        >CSS</span
+                      >
+                      <span class="bg-white/20 px-2 py-1 text-xs rounded"
+                        >JS</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="main-content py-20">
+      <div class="container mx-auto px-6 max-w-3xl">
+        <h2 class="text-4xl font-bold mb-3 text-center">
+          LET'S WORK <span class="text-[#6C442F]">TOGETHER</span>
+        </h2>
+        <p class="text-gray-600 text-center mb-12">
+          Bringing your ideas to life with clean, efficient, and scalable code.
+        </p>
+
+        <form id="contactForm" class="bg-white rounded-lg shadow-lg p-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFDE59]"
+                id="fullName"
+                placeholder="Full Name*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFDE59]"
+                id="email"
+                placeholder="Email*"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="form-group">
+              <input
+                type="tel"
+                class="form-control w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFDE59]"
+                id="phone"
+                placeholder="Phone"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFDE59]"
+                id="subject"
+                placeholder="Subject"
+              />
+            </div>
+          </div>
+
+          <div class="form-group mb-8">
+            <textarea
+              class="form-control w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFDE59]"
+              id="message"
+              placeholder="Your Message"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="text-center">
+            <button
+              type="submit"
+              class="bg-[#FFDE59] hover:bg-[#6C442F] text-white py-3 px-8 rounded-md transition-colors font-medium inline-flex items-center"
+            >
+              Let's Talk
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 ml-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#6C442F] text-white py-8">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-2xl font-bold mb-4">Gertrude.</h1>
+        <p class="mb-6">Thank you for visiting my portfolio!</p>
+        <div class="flex justify-center space-x-6 mb-6">
+          <a href="#" class="hover:text-[#FFDE59] transition-colors"
+            ><i data-lucide="github" class="w-5 h-5"></i
+          ></a>
+          <a href="#" class="hover:text-[#FFDE59] transition-colors"
+            ><i data-lucide="linkedin" class="w-5 h-5"></i
+          ></a>
+          <a href="#" class="hover:text-[#FFDE59] transition-colors"
+            ><i data-lucide="mail" class="w-5 h-5"></i
+          ></a>
+        </div>
+        <p class="text-sm opacity-70">
+          © 2025 Gertrude Ans. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./scripts/portfolio.js"></script>
+  </body>
+</html>

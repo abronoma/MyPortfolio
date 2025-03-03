@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        lucide.createIcons();
+      });
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-screen bg-[#F4EBEC]">
+    <!-- Sidebar -->
+    <div class="flex h-[100%]">
+      <aside
+        class="w-1/5 bg-[#6C442F] text-white p-5 flex flex-col justify-between"
+      >
+        <div>
+          <h1 class="text-2xl font-bold">Gurttie.</h1>
+          <nav class="mt-5">
+            <ul class="space-y-4 border-t border-white pt-4">
+              <li class="border-b border-white pb-2"><a href="#">Home</a></li>
+              <li class="border-b border-white pb-2"><a href="#">About</a></li>
+              <li class="border-b border-white pb-2">
+                <a href="#">Experience</a>
+              </li>
+              <li class="border-b border-white pb-2"><a href="#">Works</a></li>
+              <li class="border-b border-white pb-2"><a href="#">Pages</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Footer inside Sidebar -->
+        <footer class="text-center">
+          <p class="text-sm">contact@yoursite.com</p>
+          <div class="mt-4 flex justify-center space-x-4">
+            <a href="#"><i data-lucide="github" class="w-6 h-6"></i></a>
+            <a href="#"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+            <a href="#"><i data-lucide="mail" class="w-6 h-6"></i></a>
+          </div>
+        </footer>
+      </aside>
+
+      <!-- Main Content -->
+      <div
+        class="flex-grow flex items-center justify-center relative w-4/5 p-10"
+      >
+        <div class="absolute top-5 right-5 flex space-x-4">
+          <button id="theme-toggle">
+            <i
+              data-lucide="moon"
+              id="theme-icon"
+              class="w-8 h-8 text-[#6C442F] dark:text-#6C442F"
+            ></i>
+          </button>
+          <button>
+            <i
+              data-lucide="menu"
+              class="w-8 h-8 text-[#6C442F] dark:text-white"
+            ></i>
+          </button>
+        </div>
+        <button class="absolute top-5 right-5">
+          <i data-lucide="menu" class="w-8 h-8 text-[#6C442F]"></i>
+        </button>
+
+        <div class="flex max-w-5xl items-center">
+          <div class="relative">
+            <div
+              class="absolute top-0 left-0 w-64 h-64 bg-yellow-400 rounded-[30%] -z-10"
+            ></div>
+            <img
+              src="./images/heroimg.jpg"
+              alt="Profile"
+              class="w-64 h-auto object-cover rounded-xl"
+            />
+          </div>
+        </div>
+        <!-- Text Content -->
+        <div class="w-1/2 text-center">
+          <p class="text-lg">WEB / DEVELOPER</p>
+          <h2 class="text-6xl font-bold text-[#6C442F]">Gertrude Ans.</h2>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <!-- About Section -->
+      <div class="flex flex-row max-w-6xl mx-auto mt-50 justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Education Section -->
+          <div>
+            <h2 class="text-3xl font-bold">Education</h2>
+            <div class="mt-4">
+              <p class="text-gray-500">Feb 2025 - May 2025</p>
+              <h3 class="font-bold">Backend Development</h3>
+              <p class="text-gray-500">Mest Africa</p>
+            </div>
+            <div class="mt-4">
+              <p class="text-gray-500">July 2023 - June 2024</p>
+              <h3 class="font-bold">Full Stack Web Development</h3>
+              <p class="text-gray-500">Developers In Vogue</p>
+            </div>
+
+            <div class="mt-4">
+              <p class="text-gray-500">Dec 2015 - June 2017</p>
+              <h3 class="font-bold">Database Technology</h3>
+              <p class="text-gray-500">IPMC</p>
+            </div>
+
+            <div class="mt-4">
+              <p class="text-gray-500">Sep 2017 - sep 2021</p>
+              <h3 class="font-bold">Bsc. Admin(Accounting)</h3>
+              <p class="text-gray-500">Central University</p>
+            </div>
+          </div>
+
+          <!-- Experience Section -->
+          <div>
+            <h2 class="text-3xl font-bold">Experiences</h2>
+            <div class="mt-4">
+              <p class="text-gray-500">Jun 2024 - Aug 2024</p>
+              <h3 class="font-bold">Backend Developer(Intern)</h3>
+              <p class="text-gray-500">Hurisoft, Inc.Accra</p>
+            </div>
+            <div class="mt-4">
+              <p class="text-gray-500">10/2021 - 08/2022</p>
+              <h3 class="font-bold">Call Taker</h3>
+              <p class="text-gray-500">National Signal Bureau,Accra</p>
+            </div>
+            <div class="mt-4">
+              <p class="text-gray-500">03/2019 - 06/2019</p>
+              <h3 class="font-bold">Reception Assistant</h3>
+              <p class="text-gray-500">
+                Central University, Miotso, Prampram, Ghana.
+              </p>
+            </div>
+          </div>
+
+          <!-- Interests Section -->
+          <div>
+            <h2 class="text-3xl font-bold">Interests</h2>
+            <div class="mt-4">
+              <p class="text-gray-500">2007 - 2012</p>
+              <h3 class="font-bold">
+                Bachelors in Engineering in Information Technology
+              </h3>
+              <p class="text-gray-500">
+                Harvard School of Science and Management
+              </p>
+            </div>
+          </div>
+
+          <!-- References Section -->
+          <div>
+            <h2 class="text-3xl font-bold">References</h2>
+            <div class="mt-4">
+              <h3 class="font-bold">Available Upon Request</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const toggleButton = document.getElementById("theme-toggle");
+      const icon = document.getElementById("theme-icon");
+      const html = document.documentElement;
+
+      toggleButton.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        icon.setAttribute(
+          "data-lucide",
+          html.classList.contains("dark") ? "sun" : "moon"
+        );
+        lucide.createIcons();
+      });
+    </script>
+  </body>
+</html>
